@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9; /* Fondo muy claro */
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    color: #4a90e2; /* Azul jovial para el título */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px); /* Ajuste para padding y borde */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.validaciones {
+    margin-top: 20px;
+}
+
+.validaciones h2 {
+    font-size: 1.2em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.validaciones label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4a90e2; /* Azul jovial para el botón */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab7; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos adicionales para mejorar la legibilidad */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2; /* Resalta el borde al enfocar */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra sutil al enfocar */
+}
+
+/* Espacio entre los elementos */
+br {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    textarea {
+        width: calc(100% - 12px); /* Ajuste para padding y borde en móviles */
+    }
+}
